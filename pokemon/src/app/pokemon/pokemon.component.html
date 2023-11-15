@@ -1,0 +1,8 @@
+<div *ngIf="pokemon">
+    <div *ngFor="let p of pokemon.pokemon">
+        <a routerLink="/pokemon1/{{getLastPart(p.pokemon.url)}}">
+            <p> {{p.pokemon.name }}</p>
+            
+        </a>
+    </div>
+</div>
